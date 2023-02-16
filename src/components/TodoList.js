@@ -50,7 +50,7 @@ function TodoList() {
     <div>
       <h1>What's The Plan for Today?</h1>
       <TodoForm onSubmit={addTodo} />
-      <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      <Todo className='todo-complete' todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
     </div>
   );
 }
