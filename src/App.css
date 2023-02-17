@@ -1,31 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 body {
 }
 
 html {
-    --s: 50px;
-    --c: #191b22;
-    --_s: calc(2*var(--s)) calc(2*var(--s));
-    --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
-    background: 
-      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
-      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
-      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
-      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
-      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
-      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
-    background-attachment: fixed;
-  }
-
-
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+      var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
 
 .todo-app {
   display: flex;
@@ -80,13 +79,13 @@ h1 {
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   outline: none;
-  /*background: rgb(34, 193, 195);
+  /*background: rgb(253, 29, 29);
   background: linear-gradient(
-    590deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
+    90deg,
+    rgba(253, 29, 29, 0.7721682422969187) 5%,
+    rgba(252, 176, 69, 1) 100%
   );*/
-  background-color: orange;
+   background-color: #FF4500;
   text-transform: capitalize;
   font-size: 16px;
 }
@@ -169,4 +168,6 @@ h1 {
 
 .todo-complete {
   cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
 }
